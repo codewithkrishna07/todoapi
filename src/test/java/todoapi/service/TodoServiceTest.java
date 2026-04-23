@@ -145,7 +145,7 @@ class TodoServiceTest {
         Todo result = todoService.updatedTodo(1L, updatedData);
 
         // THEN
-        assertEquals("Buy oat milk", result.getTitle());
+        assertEquals("Wrong title", result.getTitle());
         assertEquals("From Whole Foods", result.getDescription());
         assertTrue(result.getIsCompleted());
     }
